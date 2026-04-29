@@ -72,7 +72,7 @@ Data is stored in `wiki_storage.rktd` as a native Racket Association List. This 
 *   [ ] Milestone 3: Image Upload GUI and User Authentication.
 
 ## ⚖ License
-This project is licensed under the MIT License - feel free to use and modify it for your own personal or professional needs.
+
 
 ---
 
