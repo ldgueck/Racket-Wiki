@@ -3,5 +3,6 @@ compiled/
 /doc/
 *~
 *.bak
+*.rktd
 \#*
 .\#*
