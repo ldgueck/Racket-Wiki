@@ -76,7 +76,3 @@ Data is stored in `wiki_storage.rktd` as a native Racket Association List. This 
 
 ---
 
-### Tips for your GitHub Repository:
-1.  **Add a `.gitignore` file:** Inside this file, put `*.tmp` and `*.rktd`. This tells GitHub **not** to upload your personal notes or temporary files, only your code.
-2.  **Screenshot:** Take a screenshot of your `HomePage` and upload it to GitHub, then link to it at the top of the README.
-3.  **About Section:** On the right side of the GitHub page, add a short description and tags like `racket`, `wiki`, and `functional-programming`.
