@@ -44,16 +44,16 @@ racket wiki.rkt
 The wiki will be live at `http://localhost:8889`.
 
 ## 🐧 Deployment on Ubuntu Server
+
 To run this as a persistent background service:
 
-1. Create a service file: `sudo nano /etc/systemd/system/wiki.service`
-2. Add your user details and paths to the service file.
-3. Start the service:
-   ```bash
-   sudo systemctl enable wiki
-   sudo systemctl start wiki
-   ```
-4. Open the firewall: `sudo ufw allow 8889`
+Build the Docker image:
+
+    docker build -t wiki .
+
+Run the app in a Docker container:
+
+    docker run -it --rm -p 8889:8889 wiki
 
 ## 📝 Wiki Syntax
 | Feature | Syntax |
