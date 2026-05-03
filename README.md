@@ -44,16 +44,16 @@ racket wiki.rkt
 The wiki will be live at `http://localhost:8889`.
 
 ## 🐧 Deployment on Ubuntu Server
+
 To run this as a persistent background service:
 
-1. Create a service file: `sudo nano /etc/systemd/system/wiki.service`
-2. Add your user details and paths to the service file.
-3. Start the service:
-   ```bash
-   sudo systemctl enable wiki
-   sudo systemctl start wiki
-   ```
-4. Open the firewall: `sudo ufw allow 8889`
+Build the Docker image:
+
+    docker build -t wiki .
+
+Run the app in a Docker container:
+
+    docker run -it --rm -p 8889:8889 wiki
 
 ## 📝 Wiki Syntax
 | Feature | Syntax |
@@ -76,7 +76,3 @@ Data is stored in `wiki_storage.rktd` as a native Racket Association List. This 
 
 ---
 
-### Tips for your GitHub Repository:
-1.  **Add a `.gitignore` file:** Inside this file, put `*.tmp` and `*.rktd`. This tells GitHub **not** to upload your personal notes or temporary files, only your code.
-2.  **Screenshot:** Take a screenshot of your `HomePage` and upload it to GitHub, then link to it at the top of the README.
-3.  **About Section:** On the right side of the GitHub page, add a short description and tags like `racket`, `wiki`, and `functional-programming`.
