@@ -1,0 +1,20 @@
+
+# Milestone 2
+
+[[L: Lynn]] - I have put my stuff here, and my prefix is **L:**
+
+[[P: Pirjo]] - Pirjo has put her stuff here, and her prefix is **P:**
+
+[[K: Koti]] - The Koti (Home) stuff is in here, and the Koti prefix is **K:**
+
+[[ATK:]] - Here we have stuff for the ATK, and the IT prefix is **ATK:**
+
+[[TR: Travel]] - Here we have stuff for travel, and the TR prefix is **TR:**
+
+[[Wiki:]] - Help for using this wiki.
+
+![Alt Text](/images/1.png)
+
+![This is 600 x 300](/images/101.png)
+
+

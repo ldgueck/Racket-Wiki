@@ -1,0 +1,7 @@
+body { font-family: sans-serif; max-width: 850px; margin: 40px auto; background: #f4f7f6; color: #333; line-height: 1.6; }
+.box { border: 1px solid #ddd; padding: 30px; background: white; border-radius: 8px; min-height: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #eee; }
+a { color: #007bff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.footer { margin-top: 20px; font-size: 0.85em; display: flex; gap: 12px; flex-wrap: wrap; opacity: 0.8; padding-top: 10px; }
+pre { background: #f8f8f8; padding: 15px; border-radius: 5px; border: 1px solid #eee; overflow-x: auto; }
