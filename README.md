@@ -1,4 +1,4 @@
-# Racket OO-Wiki (Milestone 2.1)
+# Racket OO-Wiki (Milestone 6.0)
 
 A private, lightweight, modern knowledge base built entirely in Racket using Object-Oriented principles. This wiki follows the "Emergent Structure" philosophy, where organization is created through linking rather than folders.
 
