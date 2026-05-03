@@ -135,7 +135,25 @@
                   (save!)
                   (printf ">>> [RENAME] '~a' is now '~a'. Links updated.\n" old-name new-name)
                   #t)
-                #f)))))))
+                #f)))))
+
+    ;; --- ADD TO wiki% CLASS ---
+
+    ;; Physical deletion of an image file
+    (define/public (delete-image! filename)
+      (let ([p (build-path images-path filename)])
+        (when (file-exists? p)
+          (delete-file p)
+          (printf ">>> [JANITOR] Deleted image: ~a\n" filename))))
+
+    ;; Returns a list of filenames actually mentioned in the wiki text
+    (define/public (get-used-images)
+      (let ([all-text (apply string-append (hash-values pages))])
+        ;; Regex looks for anything following the /images/ path
+        (let ([matches (regexp-match* #px"/images/([^\\s\\)\\]\"]+)" all-text #:match-select values)])
+          (if matches 
+              (remove-duplicates (map second matches))
+              '()))))))
 
 (define my-wiki (new wiki%))
 (define my-auth (new auth%))
