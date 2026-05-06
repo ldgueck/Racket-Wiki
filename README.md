@@ -1,79 +1,81 @@
-# Racket OO-Wiki (Milestone 10.0)
+# Racket OO-Wiki 🗂️ (Milestone 10.0)
 
-A private, lightweight, modern knowledge base built entirely in Racket using Object-Oriented principles. This wiki follows the "Emergent Structure" philosophy, where organization is created through linking rather than folders.
+Hey there! Welcome to my custom-built, lightweight knowledge base. It’s written entirely in Racket using its Object-Oriented features (`racket/class`). 
 
-## 🚀 Features
-*   **Object-Oriented Backend:** Data and logic encapsulated in a robust `wiki%` class.
-*   **Modern Linking:** Supports `[[Double Bracket]]` style internal links with support for spaces and special characters.
-*   **Markdown Support:** Full rendering of headers, lists, bold, italics, and code blocks via the Racket `markdown` library.
-*   **Atomic Persistence:** Uses a "Save-to-Temp-then-Rename" strategy to ensure data integrity during crashes or power failures.
-*   **Thread-Safe:** Multi-user support via Semaphore locks to prevent data corruption.
-*   **Media Support:** Local image serving from a dedicated `/images/` directory.
-*   **Intelligence Tools:** Built-in logic for **Backlinks**, **Wanted Pages** (unwritten links), and **Orphan Detection**.
+Instead of stressing over rigid folder structures, this wiki lets you organize as you go. Just write, link things together, and let your web of notes grow naturally! 
 
-## 🛠 Technical Requirements
-*   **Racket Version:** 9.1 [CS] or higher.
-*   **Language:** `#lang racket`.
+## ✨ Why it's cool
 
-## 📦 Installation & Setup
+*   **Link Everything:** Just type `[[Page Name]]` to connect your thoughts. It handles spaces and special characters with no problem!
+*   **Markdown Magic:** Write normally and it automatically renders headers, lists, bold, italics, and code blocks.
+*   **Bulletproof Saving:** It uses a "Save-to-Temp-then-Rename" trick, so a sudden power outage won't nuke your database. 
+*   **Plays Well With Others:** Under the hood, it uses Semaphore locks. This means if two people are editing at the same time, the data won't get corrupted.
+*   **Smart Tracking:** It automatically tracks **Backlinks** (what links here?), finds **Wanted Pages** (links you haven't written yet), and spots **Orphans** (lonely pages with no links pointing to them).
+*   **Media Gallery:** Upload and serve images directly from the local `/images/` folder.
 
-### 1. Install Racket
-*   **Windows:** Download the installer from [racket-lang.org](https://racket-lang.org/).
-*   **Linux (Ubuntu):** 
+## 🛠 What You Need
+*   **Racket:** Version 9.1 [CS] or higher.
+*   **External Package:** The Racket `markdown` library.
+
+## 🚀 How to Run It Locally
+
+### 1. Grab Racket
+*   **Windows/Mac:** Download the installer from [racket-lang.org](https://racket-lang.org/).
+*   **Ubuntu Linux:** 
     ```bash
     sudo add-apt-repository ppa:plt/racket
     sudo apt update
     sudo apt install racket
     ```
 
-### 2. Install Required Packages
-This project requires the external `markdown` package.
-
-*   **Windows (DrRacket):** 
-    Go to `File -> Package Manager`. Type `markdown` and click **Install**.
-*   **Linux (Terminal):**
+### 2. Install the Markdown Package
+*   **If you use DrRacket:** Go to `File -> Package Manager`, search for `markdown`, and click **Install**.
+*   **If you use the Terminal:**
     ```bash
     raco pkg install --auto markdown
     ```
 
-### 3. Run the Wiki
-Save `wiki.rkt` and run it:
+### 3. Fire it up!
+Just run the main file from your terminal:
 ```bash
 racket wiki.rkt
 ```
-The wiki will be live at `http://localhost:8889`.
+Boom! Your wiki is now live at `http://localhost:8889`.
 
-## 🐧 Deployment on Ubuntu Server
+## 🐳 Running it on a Server (Docker)
 
-To run this as a persistent background service:
+Want to run this 24/7 on a Linux server? Docker makes it super easy:
 
-Build the Docker image:
+1. Build the image:
+   ```bash
+   docker build -t wiki .
+   ```
+2. Run it in the background:
+   ```bash
+   docker run -it --rm -p 8889:8889 wiki
+   ```
 
-    docker build -t wiki .
+## 📝 Quick Syntax Guide
 
-Run the app in a Docker container:
-
-    docker run -it --rm -p 8889:8889 wiki
-
-## 📝 Wiki Syntax
-| Feature | Syntax |
+| Want to do this? | Type this! |
 | :--- | :--- |
-| **Internal Link** | `[[Page Name]]` |
-| **External Link** | `[Title](URL)` |
-| **Embed Image** | `![Alt Text](/images/filename.png)` |
-| **Bold/Italic** | `**Bold**` / `*Italic*` |
+| **Link to a wiki page** | `[[My Cool Page]]` |
+| **Link to the outside web** | `[Click Here](https://google.com)` |
+| **Add an image** | `![Picture](/images/photo.png)` |
+| **Format text** | `**Bold**` or `*Italic*` |
 
-## 💾 Storage
-Data is stored in `wiki_storage.rktd` as a native Racket Association List. This makes the database human-readable and easy to back up using standard tools like `git` or `cron`.
+## 💾 Where does my data go?
+Everything is saved in a single file called `wiki_storage.rktd`. It's a native Racket Association List, which is just a fancy way of saying it's saved as plain text. This makes it incredibly easy to read, back up, or drop into Git!
 
-## 🗺 Roadmap
-*   [x] Milestone 1: Core OO Engine & Server Deployment.
+## 🗺 What's Next?
+*   [x] Milestone 1: Core Engine & Server Deployment.
 *   [x] Milestone 2: Markdown & Local Media Support.
-*   [x] Milestone 3: Image Upload GUI and User Authentication.
-*   [x] Milestone 10: A number of things
+*[x] Milestone 3: Image Uploads & Security.
+*   [x] Milestone 9: Code refactoring, separated classes, and UI polish!
+*   [ ] Milestone 10: The next big adventure! (Multi-user accounts, APIs, static exports... we're building it out now!)
 
 ## ⚖ License
+*(Add your license here!)*
 
-
----
+--- 
 
