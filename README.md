@@ -1,4 +1,4 @@
-# Racket OO-Wiki (Milestone 6.0)
+# Racket OO-Wiki (Milestone 10.0)
 
 A private, lightweight, modern knowledge base built entirely in Racket using Object-Oriented principles. This wiki follows the "Emergent Structure" philosophy, where organization is created through linking rather than folders.
 
@@ -69,7 +69,8 @@ Data is stored in `wiki_storage.rktd` as a native Racket Association List. This 
 ## 🗺 Roadmap
 *   [x] Milestone 1: Core OO Engine & Server Deployment.
 *   [x] Milestone 2: Markdown & Local Media Support.
-*   [ ] Milestone 3: Image Upload GUI and User Authentication.
+*   [x] Milestone 3: Image Upload GUI and User Authentication.
+*   [x] Milestone 10: A number of things
 
 ## ⚖ License
 
