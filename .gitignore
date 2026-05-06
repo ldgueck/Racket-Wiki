@@ -2,6 +2,7 @@
 compiled/
 /doc/
 /images/
+/history/
 *~
 *.bak
 *.rktd
