@@ -89,3 +89,22 @@ body {
 hr { border: 0; border-top: 1px solid #eaeaea; margin: 30px 0; }
 pre { background: #f7f6f3; padding: 15px; border-radius: 5px; overflow-x: auto; }
 img { max-width: 100%; border-radius: 4px; }
+
+/* Make HTML tables look great */
+.wiki-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+.wiki-content th, .wiki-content td {
+    border: 1px solid #edece9;
+    padding: 10px 15px;
+    text-align: left;
+}
+.wiki-content th {
+    background-color: #f7f6f3;
+    font-weight: bold;
+}
+.wiki-content tr:nth-child(even) {
+    background-color: #fbfbfb;
+}

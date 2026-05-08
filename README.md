@@ -105,3 +105,39 @@ Everything is saved in a single file called `wiki_storage.rktd`. It's a native R
 *   [ ] Milestone 10: The next big adventure! (Multi-user accounts, APIs, static exports... under construction!)
 
 ## ⚖ License
+
+
+
+
+
+
+### TABLES 
+
+**Use HTML**
+
+Because standard Markdown natively supports raw HTML, you can just drop standard HTML tables directly into your wiki pages right now and they will render perfectly.
+
+```html
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td>Lynn</td>
+    <td>Admin</td>
+  </tr>
+</table>
+```
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+  <tr>
+    <td>Lynn</td>
+    <td>Admin</td>
+  </tr>
+</table>
+
