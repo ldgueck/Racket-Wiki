@@ -2,7 +2,7 @@
 
 
 
-# Racket OO-Wiki 🗂️ 
+# Racket Wiki 🗂️ 
 
 Hey there! Welcome to my custom-built, lightweight knowledge base. It’s written entirely in Racket using its Object-Oriented features (`racket/class`). 
 
