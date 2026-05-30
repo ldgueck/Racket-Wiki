@@ -4,7 +4,7 @@
 
 # Racket Wiki 🗂️ 
 
-Hey there! Welcome to my custom-built, lightweight knowledge base. It’s written entirely in Racket using its Object-Oriented features (`racket/class`). 
+Welcome to my custom-built, lightweight knowledge base. It’s written entirely in Racket using its Object-Oriented features (`racket/class`). 
 
 Instead of stressing over rigid folder structures, this wiki lets you organize as you go. Just write, link things together, and let your web of notes grow naturally! It recently underwent a massive refactoring to separate the backend logic, authentication, and frontend UI into clean, modular files.
 
